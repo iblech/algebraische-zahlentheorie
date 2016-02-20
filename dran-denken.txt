@@ -1,0 +1,2 @@
+* Aufgaben der Art "Wo liegt der Fehler in folgendem Beweis?" stellen,
+  wenn möglich.
