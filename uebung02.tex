@@ -12,28 +12,43 @@
 \end{enumerate}
 \end{aufgabe}
 
+\begin{aufgabe}{Produkt ganzer Zahlen}
+\begin{enumerate}
+\item Seien~$x$ und~$y$ komplexe Zahlen mit~$x^3-x+1=0$ und~$y^2-2=0$.
+Finde eine normierte Polynomgleichung mit ganzzahligen
+Koeffizienten, die die Zahl~$x \cdot y$ als Lösung besitzt.
+\item Der \emph{Grad} einer ganzen Zahl~$z$ ist der kleinstmögliche Grad
+einer normierten Polynomgleichung mit ganzzahligen Koeffizienten, die~$z$ als Lösung
+besitzt. Finde eine Abschätzung für den Grad des Produkts zweier ganzer Zahlen
+in Abhängigkeit der Grade der Faktoren.
+\end{enumerate}
+\end{aufgabe}
+
 \begin{aufgabe}{Erste Schritte mit Norm und Spur}
 Sei~$\alpha \in \CC$ eine Nullstelle des Polynoms~$f(X) \defeq X^3 - 2\,X + 5$.
 Sei~$K \defeq \QQ[\alpha]$. Berechne Norm und Spur des Elements~$2\alpha - 1
-\in K$.
+\in K$:
+\begin{enumerate}
+\item Begründe kurz, wieso~$(1,\alpha,\alpha^2)$ eine~$\QQ$-Basis von~$K$ ist.
+\item Stelle eine Darstellungsmatrix der linearen Abbildung~$K \to K,\,z \mapsto
+(2\alpha-1)z$ auf.
+\item Berechne Determinante und Spur dieser Matrix.
+\end{enumerate}
 \end{aufgabe}
 
-\begin{aufgabe}{}
+\begin{aufgabe}{Knobeln mit Einheitswurzeln}
 Sei~$p \in \NN$ eine Primzahl und~$\zeta \in \CC$ eine primitive~$p$-te
 Einheitswurzel (also~$\zeta^p = 1$ und~$\zeta \neq 1$). Sei~$K \defeq
 \QQ[\zeta]$.
 \begin{enumerate}
 \item Was ist die Norm von~$1 - \zeta \in K$?
-
 {\tiny\emph{Hinweis.} Das Minimalpolynom von~$\zeta$ ist~$X^{p-1} + X^{p-2} +
 \cdots + X + 1 = \tfrac{X^p - 1}{X-1}$.\par}
-\item Zeige, dass für alle~$k \in \NN$ die Zahl~$\gamma_k \defeq
+\item Sei~$k \in \NN$. Zeige, dass die Zahl~$\gamma_k \defeq
 \tfrac{1-\zeta^k}{1-\zeta} \in K$ in~$\O_K$ liegt.
 \item Seien nun~$k$ und~$p$ zueinander teilerfremd. Zeige, dass~$\gamma_k$
 sogar in~$\O_K^\times$ liegt.
 \end{enumerate}
 \end{aufgabe}
-
-Zwei weitere Aufgaben folgen gleich.
 
 \end{document}

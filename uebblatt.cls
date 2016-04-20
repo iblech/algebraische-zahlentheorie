@@ -51,7 +51,7 @@
   Sommersemester 2016 \\[0em]
 
   \begin{center}
-    \Large \textbf{Übungsblatt #1 zur Zahlentheorie} \\[1em]
+    \Large \textbf{Übungsblatt #1 zur Algebraischen Zahlentheorie} \\[1em]
   \end{center}
   \vspace{\titleskip}}
 
