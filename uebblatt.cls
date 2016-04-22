@@ -68,6 +68,14 @@
   \textbf{Aufgabe \theaufgabennummer{}.} \emph{#1} \par
 }{\vspace{\aufgabenskip}}
 
+\newlength{\markerlength}
+\newcommand{\markertext}{$\heartsuit$\quad}
+\settowidth{\markerlength}{\markertext}
+\newenvironment{aufgabe*}[1]{
+  \addtocounter{aufgabennummer}{1}
+  \hspace*{-\markerlength}\markertext\textbf{Aufgabe \theaufgabennummer{}.} \emph{#1} \par
+}{\vspace{\aufgabenskip}}
+
 \clubpenalty=10000
 \widowpenalty=10000
 \displaywidowpenalty=10000
