@@ -59,7 +59,7 @@ renderAlgebraist p = [hamlet|
 
 renderLeaderboard config ps =
     let format = printf "%02d" :: Int -> String
-        shs    = [0..newestSheet config]
+        shs    = [1..newestSheet config]
     in [hamlet|
 $doctype 5
 <html lang="de">
