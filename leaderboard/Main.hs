@@ -113,6 +113,8 @@ $doctype 5
         <a href="uebung#{format n}.pdf">Blatt #{show n}
         <br>
       <a href="alle.pdf">Alle Übungsblätter in einer Datei
+    <p style="width: 18em; margin-left: auto; margin-right: auto">
+      Auf Blatt 3 kam seit dem ersten Upload eine Teilaufgabe zu Aufgabe 2 hinzu. Wenn euch das zu viele Diskriminanten sind, dann macht halt nur die Teilaufgabe, die euch mehr interessiert. :-)
     <p class="moral">
       Whenever you meet a <em>functor</em>,<br>
       ask “What is its <em>codensity monad</em>?”.
