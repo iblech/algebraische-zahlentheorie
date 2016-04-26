@@ -65,7 +65,7 @@ $doctype 5
 <html lang="de">
   <head>
     <meta charset="utf-8">
-    <title>Kommutative Algebra
+    <title>Algebraische Zahlentheorie
     <link rel="shortcut icon" href="images/heart.ico">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&amp;subset=latin,latin-ext">
     <style type="text/css">
