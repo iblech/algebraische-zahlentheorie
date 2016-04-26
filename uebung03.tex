@@ -1,0 +1,47 @@
+\documentclass{uebblatt}
+
+\begin{document}
+
+\maketitle{3}
+
+\begin{aufgabe}{Beispiel für ein Primelement in einem Ganzheitsring}
+Sei~$\zeta \in \CC$ eine primitive dritte Einheitswurzel (also etwa~$\zeta =
+\frac{1+\sqrt{-3}}{2}$). Sei~$K \defeq \QQ[\zeta]$.
+\begin{enumerate}
+\item Zeige: $\O_K^\times = \{ \pm 1, \pm \zeta, \pm \zeta^2 \}$.
+\item Zeige, dass~$\lambda \defeq 1 - \zeta \in \O_K$ in~$\O_K$ prim ist.
+\item Zeige, dass~$3$ und~$\lambda^2$ in~$\O_K$ zueinander assoziiert sind.
+\end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe}{Beispiel zur Diskriminantenberechnung}
+Sei~$K \defeq \QQ[\sqrt[3]{5}]$. Berechne die Diskriminante
+der~$\QQ$-Basis~$(1,\sqrt[3]{5},\sqrt[3]{5}^2)$ von~$K$.
+\end{aufgabe}
+
+\begin{aufgabe}{Eine allgemeine Formel für die Diskriminante}
+\begin{enumerate}
+\item Sei~$K = \QQ[\vartheta]$ ein Zahlkörper vom Grad~$n$. Sei~$p(X) \in \QQ[X]$ das
+Minimalpolynom von~$\vartheta$. Zeige:
+\[ d(1,\vartheta,\vartheta^2,\ldots,\vartheta^{n-1}) =
+  (-1)^{n(n-1)/2} \cdot N_{K|\QQ}(p'(\vartheta)). \]
+\item Sei~$p$ eine Primzahl und sei~$\zeta$ eine primitive~$p$-te
+Einheitswurzel. Folgere:
+\[ d(1,\zeta,\ldots,\zeta^{p-2}) =
+  (-1)^{(p-1)(p-2)/2} \cdot p^{p-2}. \]
+\end{enumerate}
+\vspace*{-1em}
+\end{aufgabe}
+
+\begin{aufgabe}{Ein hinreichendes Kriterium für das Vorliegen einer Ganzheitsbasis}
+Sei~$K$ ein Zahlkörper. Sei~$B$ eine~$\QQ$-Basis von~$K$, deren Elemente schon
+in~$\O_K$ liegen; damit ist ihre Diskriminante~$d$ ganzzahlig. Zeige: Ist~$d$
+quadratfrei, so ist~$B$ eine Ganzheitsbasis von~$\O_K$.
+\end{aufgabe}
+
+\begin{aufgabe}{Ein erster Ausblick auf Verzweigung von Primidealen}
+Ist das Ideal~$(3, 1+2\sqrt{-5})$ von~$\O_{\QQ[\sqrt{-5}]}$ prim? Ist es sogar
+maximal?
+\end{aufgabe}
+
+\end{document}

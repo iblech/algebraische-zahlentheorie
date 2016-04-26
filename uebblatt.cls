@@ -48,7 +48,7 @@
   Prof. Dr. Marco Hien \\
   Lehrstuhl für Algebra und Zahlentheorie \hfill
   Ingo Blechschmidt \\
-  Sommersemester 2016 \\[0em]
+  Schnee-im-April-Semester 2016 \\[0em]
 
   \begin{center}
     \Large \textbf{Übungsblatt #1 zur Algebraischen Zahlentheorie} \\[1em]
