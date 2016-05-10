@@ -113,7 +113,6 @@ $doctype 5
         <a href="uebung#{format n}.pdf">Blatt #{show n}
         <br>
       <a href="alle.pdf">Alle Übungsblätter in einer Datei
-    <p class="moral">
-      Whenever you meet a <em>functor</em>,<br>
-      ask “What is its <em>codensity monad</em>?”.
+    <p class="moral" style="background-color: #dd434b; color: white; font-weight: bold">
+      Bitte Kommentar im <a href="https://etherpad.wikimedia.org/p/RPUjEpIKmv">Kummerkasten</a> abgeben! Vielen Dank. :-)
 |]
