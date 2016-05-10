@@ -43,10 +43,11 @@ berechnen.\par}
 \end{aufgabe}
 
 \begin{aufgabe}{Charakterisierung von Gittern}
-Zeige, dass eine Untergruppe~$\Gamma \subseteq \RR^n$ genau dann ein Gitter
-ist, wenn sie diskret ist (wenn also zu jedem Punkt~$\gamma \in \Gamma$ eine
-offene Umgebung~$U \subseteq \RR^n$ von~$\gamma$ mit~$U \cap \Gamma =
-\{\gamma\}$ existiert).
+\begin{enumerate}
+\item Zeige, dass eine Untergruppe~$\Gamma \subseteq \RR^n$ genau dann ein Gitter
+ist, wenn sie diskret ist (wenn jeder Punkt~$\gamma \in \Gamma$ eine
+offene Umgebung~$U \subseteq \RR^n$ mit~$U \cap \Gamma =
+\{\gamma\}$ besitzt).
 
 {\tiny\emph{Hinweis.} Wähle für die Rückrichtung eine maximale
 über~$\RR$ linear unabhängige Familie~$(\gamma_1,\ldots,\gamma_m)$ von Vektoren
@@ -55,13 +56,22 @@ aus~$\Gamma$; setze~$\Gamma_0 \defeq
 |\Gamma/\Gamma_0|$ endlich ist (überlege dir dazu, wie die Äquivalenzklassen
 in~$\Gamma/\Gamma_0$ aussehen); folgere, dass~$q\Gamma \subseteq \Gamma_0$; und
 zeige damit die Behauptung.\par}
+\item Sei~$K \subseteq \CC$ ein Zahlkörper vom Grad~$\geq 3$. Folgere, dass es zu
+jeder Zahl~$\varepsilon > 0$ ein Element~$a \in \O_K \setminus \{0\}$ gibt,
+dessen komplexer Betrag kleiner als~$\varepsilon$ ist.
+\end{enumerate}
 \end{aufgabe}
 
-\begin{aufgabe}{Undiskretheit von Ganzheitsringen}
-Sei~$K$ ein Zahlkörper vom Grad~$\geq 3$. Zeige, dass zu jedem~$\varepsilon >
-0$ ein Element~$a \in \O_K \setminus \{0\}$ existiert, dessen komplexer Betrag
-kleiner als~$\varepsilon$ ist.
-\end{aufgabe}
+\begin{aufgabe*}{Dedekindringe mit Klassenzahl 1}
+Zeige, dass ein Dedekindring genau dann faktoriell ist, wenn er ein
+Hauptidealbereich ist.
+
+{\tiny\emph{Hinweis.} Zeige für die Hinrichtung, dass jedes von Null
+verschiedene Primideal~$\ppp$ ein Hauptideal ist. Fixiere dazu ein Element~$\pi
+\in \ppp \setminus \ppp^2$ und zerlege zum einen das Ideal~$(\pi)$ in Primideale (welches
+Ideal kommt dabei sicher vor?) und zum anderen das Element~$\pi$ in
+Primfaktoren.\par}
+\end{aufgabe*}
 
 \begin{aufgabe*}{Geradenbündel über dem Spektrum von Ganzheitsringen}
 Sei~$K$ ein Zahlkörper. Zeige: Die gebrochenen Ideale von~$K$ sind
