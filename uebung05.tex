@@ -27,7 +27,8 @@ Hauptidealring ist.
 dass~$\aaa$ von zwei Elementen erzeugt werden kann, von denen eines~$x$ ist.
 \end{enumerate}
 {\tiny\emph{Hinweis.} In einem Faktorring~$A/\bbb$ gibt es genau so viele
-Primideale, wie es Primideale in~$A$ gibt, welche~$\bbb$ umfassen.\par}
+Primideale, wie es Primideale in~$A$ gibt, welche~$\bbb$ umfassen. Erinnere
+dich an den chinesischen Restsatz.\par}
 \end{aufgabe}
 
 \begin{aufgabe}{Beispiel für eine Volumenberechnung}
@@ -35,6 +36,10 @@ Sei~$K \defeq \QQ[\sqrt{-5}]$. Sei~$\ppp \defeq (3, 1 + 2\sqrt{-5}) \subseteq
 \O_K$. Bestimme das Volumen des vollständigen
 Gitters~$j[\ppp] \subseteq K_\RR$, wobei~$j : K \hookrightarrow K_\RR$ die
 Einbettung in den Minkowskiraum ist.
+
+{\tiny\emph{Bemerkung.} Es gibt eine Formel für das Volumen, die sofort den
+Wert~$6 \sqrt{5}$ liefert. Aber es ist spannender, das Volumen per Hand zu
+berechnen.\par}
 \end{aufgabe}
 
 \begin{aufgabe}{Charakterisierung von Gittern}
@@ -42,6 +47,14 @@ Zeige, dass eine Untergruppe~$\Gamma \subseteq \RR^n$ genau dann ein Gitter
 ist, wenn sie diskret ist (wenn also zu jedem Punkt~$\gamma \in \Gamma$ eine
 offene Umgebung~$U \subseteq \RR^n$ von~$\gamma$ mit~$U \cap \Gamma =
 \{\gamma\}$ existiert).
+
+{\tiny\emph{Hinweis.} Wähle für die Rückrichtung eine maximale
+über~$\RR$ linear unabhängige Familie~$(\gamma_1,\ldots,\gamma_m)$ von Vektoren
+aus~$\Gamma$; setze~$\Gamma_0 \defeq
+\operatorname{span}_\ZZ(\gamma_1,\ldots,\gamma_m)$; zeige, dass~$q \defeq
+|\Gamma/\Gamma_0|$ endlich ist (überlege dir dazu, wie die Äquivalenzklassen
+in~$\Gamma/\Gamma_0$ aussehen); folgere, dass~$q\Gamma \subseteq \Gamma_0$; und
+zeige damit die Behauptung.\par}
 \end{aufgabe}
 
 \begin{aufgabe}{Undiskretheit von Ganzheitsringen}
@@ -56,3 +69,5 @@ als~$A$-Moduln projektiv.
 \end{aufgabe*}
 
 \end{document}
+
+plot "<perl -we 'for my $a (-10..10) { for my $b (-10..10) { print 3*$a+$b, chr(32), -$b*sqrt(5), $/ } }'" w p ps 10 pt 5, 0
