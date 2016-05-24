@@ -1,4 +1,4 @@
-\documentclass[entwurf]{uebblatt}
+\documentclass{uebblatt}
 
 \begin{document}
 
@@ -22,15 +22,19 @@ Ganzheitsbasis. Zeige:
 \end{enumerate}
 \end{aufgabe}
 
-\begin{aufgabe}{Verzweigung von Primidealen}
+\begin{aufgabe}{Wir mögen Hauptideale}
 \begin{enumerate}
-\item Sei~$K = \QQ[\sqrt[3]{2}]$. Es ist~$(1,\sqrt[3]{2},\sqrt[3]{2}^2)$ eine
-Ganzheitsbasis von~$\O_K$. Bestimme das Verzweigungsverhalten der
-Primzahlen~$2, 3, 5$ und~$11$ in~$\O_K$.
-\item Was möchte dir \emph{Mumfords Schatzkarte} mitteilen? Analysiere sie so
-gut wie möglich!
+\item Sei~$K$ ein Zahlkörper und~$\aaa \subseteq \O_K$ ein Ideal. Sei~$\aaa^m =
+(\alpha)$ für ein~$x \in \O_K$ und eine Zahl~$m \geq 0$. Sei~$L \defeq
+K(\sqrt[m]{\alpha})$. Zeige, dass das Ideal~$\aaa \O_L$ von~$\O_L$ ein
+Hauptideal ist.
 
-\centering\includegraphics[width=0.7\textwidth]{images/mumfords-treasure-map}
+{\tiny\emph{Hinweis.} Nur um Missverständnissen vorzubeugen, das
+Ideal~$\aaa\O_L$ besteht aus allen~$\O_L$-Linearkombinationen von Elementen
+aus~$\aaa$.\par}
+\item Sei~$K$ ein Zahlkörper. Finde eine endliche Erweiterung~$L$ von~$K$,
+sodass jedes Ideal von~$\O_K$ in~$\O_L$ zu einem Hauptideal wird (im gleichen
+Sinn wie in~a)).
 \end{enumerate}
 \end{aufgabe}
 
