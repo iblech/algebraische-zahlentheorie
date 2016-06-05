@@ -39,3 +39,7 @@ Sinn wie in~a)).
 \end{aufgabe}
 
 \end{document}
+
+-- für Aufgabe 1b: Wieso ist (2, 1 + sqrt(7)) ein Hauptideal?
+> let xs = [-6..6] in [ (a,b,c,d,e,f) | a <- xs, b <- xs, c <- xs, d <- xs, e <- xs, f <- xs, 2*a*c+b*c+7*b*d == 2, 2*a*d+b*d+b*c == 0, 2*a*e+b*e+7*b*f == 1, 2*a*f+b*f+b*e == 1 ]
+[(-2,1,-3,-1,-5,-2),(-1,-1,-3,1,2,-1),(1,1,3,-1,-2,1),(2,-1,3,1,5,2)]
