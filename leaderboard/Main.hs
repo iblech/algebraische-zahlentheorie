@@ -8,12 +8,14 @@ import Text.Blaze.Html.Renderer.String
 import Text.Printf
 import MyHamlet
 
+data Bool3 = F | T | U deriving (Show,Read,Eq)
+
 data Algebraist = MkAlgebraist
     { name     :: String
     , nick     :: String
     , url      :: String
     , awards   :: [String]
-    , sheets   :: [Bool]
+    , sheets   :: [Bool3]
     } deriving (Show,Eq,Read)
 
 data Config = MkConfig
@@ -27,7 +29,7 @@ currentStreak :: Algebraist -> Int
 currentStreak = last . streaks
 
 streaks :: Algebraist -> [Int]
-streaks = (0:) . map (length . filter id) . group . sheets
+streaks = (0:) . map (length . filter (== T)) . group . sheets
 
 strength :: Algebraist -> Algebraist -> Ordering
 strength = mconcat
@@ -48,8 +50,10 @@ renderAlgebraist p = [hamlet|
       <a href="#{url p}">#{nick p}
     <td>
       $forall sheet <- sheets p
-        $if sheet
+        $if sheet == T
           <span class="rect success">■
+        $elseif sheet == U
+          <span class="rect unknown">☯
         $else
           <span class="rect failure">■
     <td>#{longestStreak p}
@@ -90,6 +94,7 @@ $doctype 5
       .rect { font-size: 200%; }
       .success { color: #44a340; }
       .failure { color: #eeeeee; }
+      .unknown { color: #eeeeee; font-size: 135%; }
   <body>
     <h1>Algebraische Zahlentheorie
     <a href="http://brownsharpie.courtneygibbons.org/?p=1253">
