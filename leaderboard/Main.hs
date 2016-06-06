@@ -2,7 +2,7 @@
 module Main where
 
 import Data.List
-import Data.Monoid
+import Data.Monoid ()
 import Data.Ord
 import Text.Blaze.Html.Renderer.String
 import Text.Printf
