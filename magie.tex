@@ -23,13 +23,12 @@ wollen verstehen, wieso die Idealklassengruppe~$\Cl_K$ endlich ist. Genauer:
 wieso es endlich viele Ideale~$\aaa_1, \ldots, \aaa_m \subseteq \O_K$ mit
 \[ \Cl_K = \{ [\aaa_1], \ldots, [\aaa_m] \} \]
 gibt -- und wie man diese Ideale bestimmen kann.
-
 Grundlegend dazu ist folgendes Resultat:
 
 \hilight{0.75\textwidth}{Zu jedem Element~$g \in \Cl_K$ gibt es ein
 Ideal~$\aaa \subseteq \O_K$ mit~$g = [\aaa]$ und
 \[ N(\aaa) \leq \left(\frac{4}{\pi}\right)^s \cdot \frac{n!}{n^n} \cdot
-\sqrt{|d_K|} =\vcentcolon \Min_K. \]\vspace*{-1em}}
+\sqrt{|d_K|} =\vcentcolon \Min_K. \]\vspace*{-1.3em}}
 
 Denn nach Definition gilt ja zunächst nur
 \begin{align*}
@@ -65,7 +64,7 @@ Primideal nicht das Nullideal ist (das liegt an der Ganzheit von~$\O_K$
 ("`Idealerweiterung ist linksadjungiert zu Idealkontraktion."')
 \item[3.] Sei~$(p) = \qqq_1 \cdots \qqq_m \subseteq \O_K$ die Primidealzerlegung
 von~$(p)$. Da~$\ppp_i$ ein Primideal ist, folgt aus~$\qqq_1 \cdots \qqq_m
-\subseteq \ppp_i$, dass es schon einen Index~$j$ mit~$\qqq_j \subseteq \ppp_i$
+\subseteq \ppp_i$ schon, dass es einen Index~$j$ mit~$\qqq_j \subseteq \ppp_i$
 gibt. Da~$\qqq_j$ wie jedes nichttriviale Primideal in einem Dedekindring
 maximal ist, folgt~$\qqq_j = \ppp_i$.
 \end{enumerate}} Diese Primzahl ist nicht beliebig groß, denn es gilt
@@ -81,7 +80,7 @@ vielen Primideale~$(p) \subseteq \O_K$, wobei~$p \in \ZZ$ über alle
 Primzahlen mit~$p \leq \Min_K$ läuft, vorkommen. Dann gilt
 \[ \Cl_K = \{ [\aaa] \,|\, \text{$\aaa \subseteq \O_K$ ist ein Produkt
 der~$\ppp_1,\ldots,\ppp_\ell$ mit~$N(\aaa) \leq
-\Min_K$} \}. \]\vspace*{-1.5em}}
+\Min_K$} \}. \]\vspace*{-1.8em}}
 Die~$\ppp_i$ dürfen in diesen Produkten durchaus mit Vielfachheit Null oder
 auch mit Vielfachheit größer als Eins auftreten.
 
@@ -112,7 +111,14 @@ möglich. Somit besteht die Klassengruppe aus höchstens zwei
 Elementen:
 \[ \Cl_K = \{ [(1)], [\ppp] \}. \]
 Ferner ist~$\ppp$ kein Hauptideal, denn eine Nebenrechnung zeigt, dass die Norm
-eines Hauptideals stets von der Form~$a + 5b^2$ mit~$a,b \in \ZZ$ ist. Daher
+eines Hauptideals stets von der Form~$a^2 + 5b^2$ mit~$a,b \in \ZZ$ ist. Daher
 ist~$[\ppp] \neq [(1)]$; die Klassengruppe besteht aus genau zwei Elementen.
+
+
+\section*{Eine Warnung}
+
+Man könnte denken, dass die Abschätzung~$h_K \leq \Min_K$ gilt. Das ist jedoch
+falsch. Im Fall~$K = \QQ(\sqrt{-71})$ ist~$h_K = 7$ und~$\Min_K =
+2\sqrt{71}/\pi \approx 5{,}36$.
 
 \end{document}
