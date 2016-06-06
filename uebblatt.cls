@@ -104,6 +104,7 @@
 \newcommand{\W}{\mathcal{W}}
 \newcommand{\I}{\mathcal{I}}
 \newcommand{\J}{\mathcal{J}}
+\newcommand{\FFF}{\mathfrak{F}}
 \renewcommand{\H}{\mathcal{H}}
 \renewcommand{\O}{\mathcal{O}}
 \newcommand{\K}{\mathcal{K}}

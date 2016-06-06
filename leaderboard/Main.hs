@@ -114,6 +114,8 @@ $doctype 5
     <p>
       <em>Du willst deine Übungsblattsträhne verbessern?
       <br>
+      <a href="magie.pdf">Von Minkowski zur Endlichkeit der Idealklassengruppe
+      <br>
       $forall n <- shs
         <a href="uebung#{format n}.pdf">Blatt #{show n}
         <br>

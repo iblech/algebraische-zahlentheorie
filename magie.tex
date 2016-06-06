@@ -1,0 +1,118 @@
+\documentclass{uebblatt}
+
+\usepackage{framed}
+
+\definecolor{haskell}{RGB}{150,0,255}
+
+\newcommand{\hilight}[2]{\begin{center}%
+  \setlength{\fboxrule}{2pt}%
+  \setlength{\fboxsep}{5pt}%
+  \textcolor{haskell}{\fbox{\textcolor{black}{\parbox{#1}{#2}}}}\end{center}}
+
+\newcommand{\Cl}{\mathrm{Cl}}
+\newcommand{\Min}{\mathrm{Min}}
+
+\let\raggedsection\centering
+
+\begin{document}
+
+\section*{Von Minkowski zur Endlichkeit der Idealklassengruppe}
+
+Sei~$K$ ein Zahlkörper vom Grad~$n$ mit~$s$ Pärchen komplexer Einbettungen. Wir
+wollen verstehen, wieso die Idealklassengruppe~$\Cl_K$ endlich ist. Genauer:
+wieso es endlich viele Ideale~$\aaa_1, \ldots, \aaa_m \subseteq \O_K$ mit
+\[ \Cl_K = \{ [\aaa_1], \ldots, [\aaa_m] \} \]
+gibt -- und wie man diese Ideale bestimmen kann.
+
+Grundlegend dazu ist folgendes Resultat:
+
+\hilight{0.75\textwidth}{Zu jedem Element~$g \in \Cl_K$ gibt es ein
+Ideal~$\aaa \subseteq \O_K$ mit~$g = [\aaa]$ und
+\[ N(\aaa) \leq \left(\frac{4}{\pi}\right)^s \cdot \frac{n!}{n^n} \cdot
+\sqrt{|d_K|} =\vcentcolon \Min_K. \]\vspace*{-1em}}
+
+Denn nach Definition gilt ja zunächst nur
+\begin{align*}
+  \Cl_K &= \{ [\aaa] \,|\, \text{$\aaa \subseteq K$ gebrochenes Ideal} \}. \\
+\intertext{Wegen Minkowskis Resultat kann man aber auch}
+  \Cl_K &= \{ [\aaa] \,|\, \text{$\aaa \subseteq \O_K$ Ideal mit~$\aaa \neq
+  (0)$ und~$N(\aaa) \leq \Min_K$} \}
+\end{align*}
+schreiben. Das ist eine starke Einschränkung, denn -- wie wir gleich sehen
+werden -- gibt es von diesen Idealen nur endlich viele; und mehr noch: Man kann
+sie finden und explizit angeben.
+
+Dazu betrachten wir für den Moment ein beliebiges Ideal~$\aaa \subseteq \O_K$
+mit~$\aaa \neq (0)$ und~$N(\aaa) \leq \Min_K$. Welche Primideale können in der
+Primidealzerlegung von~$\aaa$ nur vorkommen? Wenn wir~$\aaa = \ppp_1^{\nu_1}
+\cdots \ppp_k^{\nu_k}$ schreiben, so gilt
+\[ N(\ppp_i) \leq N(\ppp_i)^{\nu_i} = N(\ppp_i^{\nu_i}) \leq
+  N(\ppp_1^{\nu_1}) \cdots N(\ppp_k^{\nu_k}) = N(\ppp_1^{\nu_1}
+  \cdots \ppp_k^{\nu_k}) = N(\aaa) \leq \Min_K. \]
+Ferner erkennen wir: Das Primideal~$\ppp_i$ ist nicht irgendein Primideal.
+Vielmehr ist es eines der Faktoren in der Primidealzerlegung von~$(p) \subseteq
+\O_K$, wobei~$p \in \ZZ$ die Primzahl mit~$(p) = \ppp_i \cap \ZZ \subseteq \ZZ$
+ist.\footnote{Weiter vorne im Satz ist mit~"`$(p)$"' das von~$p$ erzeugte Ideal
+von~$\O_K$ gemeint; weiter hinten das von~$p$ erzeugte Ideal in~$\ZZ$. Die
+Behauptung kann man in drei Schritten einsehen:
+\begin{enumerate}
+\item[1.] Dass es überhaupt eine Primzahl~$p \in \ZZ$ gibt, für die~$(p) = \ppp_i
+\cap \ZZ$ ist, liegt daran, dass aus ganz allgemeinen ringtheoretischen Gründen
+das Ideal~$\ppp_i \cap \ZZ$ ein Primideal von~$\ZZ$ ist und dass dieses
+Primideal nicht das Nullideal ist (das liegt an der Ganzheit von~$\O_K$
+über~$\ZZ$).
+\item[2.] Aus allgemeinen ringtheoretischen Gründen folgt~$(p) \subseteq \ppp_i$.
+("`Idealerweiterung ist linksadjungiert zu Idealkontraktion."')
+\item[3.] Sei~$(p) = \qqq_1 \cdots \qqq_m \subseteq \O_K$ die Primidealzerlegung
+von~$(p)$. Da~$\ppp_i$ ein Primideal ist, folgt aus~$\qqq_1 \cdots \qqq_m
+\subseteq \ppp_i$, dass es schon einen Index~$j$ mit~$\qqq_j \subseteq \ppp_i$
+gibt. Da~$\qqq_j$ wie jedes nichttriviale Primideal in einem Dedekindring
+maximal ist, folgt~$\qqq_j = \ppp_i$.
+\end{enumerate}} Diese Primzahl ist nicht beliebig groß, denn es gilt
+\[ p \leq p^{f_i} = N(\ppp_i) \leq \Min_K, \]
+wenn man mit~"`$f_i$"' die endliche Dimension
+des~$\FF_p$-Vektorraums~$\O_K/\ppp_i$ bezeichnet.
+
+Das Fazit dieser Überlegung lautet:\enlargethispage{1em}
+
+\hilight{0.88\textwidth}{Seien~$\ppp_1, \ldots, \ppp_\ell$
+die endlich vielen Primideale, die in den Primidealzerlegungen der endlich
+vielen Primideale~$(p) \subseteq \O_K$, wobei~$p \in \ZZ$ über alle
+Primzahlen mit~$p \leq \Min_K$ läuft, vorkommen. Dann gilt
+\[ \Cl_K = \{ [\aaa] \,|\, \text{$\aaa \subseteq \O_K$ ist ein Produkt
+der~$\ppp_1,\ldots,\ppp_\ell$ mit~$N(\aaa) \leq
+\Min_K$} \}. \]\vspace*{-1.5em}}
+Die~$\ppp_i$ dürfen in diesen Produkten durchaus mit Vielfachheit Null oder
+auch mit Vielfachheit größer als Eins auftreten.
+
+
+\newpage
+\section*{Ein Beispiel: Die Klassengruppe von~$\QQ(\sqrt{-5})$}
+
+Sei~$K = \QQ(\sqrt{-5})$. Da~$-5 \equiv 3$ modulo~$4$, ist die Diskriminante
+von~$K$ gleich~$4 \cdot (-5)$ und die Minkowskischranke daher
+\[ \Min_K = \left(\frac{4}{\pi}\right)^1 \cdot \frac{2!}{2^2} \cdot \sqrt{20}
+  \approx 2{,}85. \]
+Somit müssen wir nur die Primzahl~$p = 2$ untersuchen, um alle Elemente der
+Klassengruppe auflisten zu können.
+
+Der Führer~$\FFF_{\sqrt{-5}}$ ist das Einsideal, denn~$\O_K = \ZZ[\sqrt{-5}]$.
+Daher genügt es, um die Primidealzerlegung von~$(2) \subseteq \O_K$ zu
+bestimmen, die Zerlegung des Minimalpolynoms~$X^2 + 5$ über~$\FF_2$ zu
+bestimmen. Diese lautet
+$X^2 + 5 = (X + 1)^2 \in \FF_2[X]$.
+Daher zerlegt sich das Ideal~$(2)$ als
+\[ \text{$(2) = \ppp^2$ mit~$\ppp = (2, \sqrt{-5} + 1)$. } \]
+Somit folgt
+$\Cl_K = \{ [\ppp^\nu] \,|\, \text{$\nu \geq 0$ mit~$N(\ppp^\nu) \leq
+\Min_K$} \}$.
+Das können wir noch aufdröseln: Es gilt~$N(\ppp) = |\O_K/\ppp| = |\FF_2| = 2$,
+also~$N(\ppp^\nu) = 2^\nu$. Für~$\nu$ sind daher nur die Werte~$0$ und~$1$
+möglich. Somit besteht die Klassengruppe aus höchstens zwei
+Elementen:
+\[ \Cl_K = \{ [(1)], [\ppp] \}. \]
+Ferner ist~$\ppp$ kein Hauptideal, denn eine Nebenrechnung zeigt, dass die Norm
+eines Hauptideals stets von der Form~$a + 5b^2$ mit~$a,b \in \ZZ$ ist. Daher
+ist~$[\ppp] \neq [(1)]$; die Klassengruppe besteht aus genau zwei Elementen.
+
+\end{document}
