@@ -121,6 +121,7 @@
 \newcommand{\aaa}{\mathfrak{a}}
 \newcommand{\bbb}{\mathfrak{b}}
 \newcommand{\ccc}{\mathfrak{c}}
+\newcommand{\PPP}{\mathfrak{P}}
 \newcommand{\ppp}{\mathfrak{p}}
 \newcommand{\qqq}{\mathfrak{q}}
 \newcommand{\rrr}{\mathfrak{r}}
@@ -188,6 +189,7 @@
 \newcommand{\psxy}[1]{{#1}\llbracket{X,Y}\rrbracket}
 \newcommand{\psmany}[2]{{#1}\llbracket{#2}\rrbracket}
 
-\newcommand{\stackhref}[1]{\href{http://stacks.math.columbia.edu/tag/#1}{#1}}
+\newcommand{\leg}[2]{\left(\frac{#1}{#2}\right)}
+\newcommand{\Gal}{\mathrm{Gal}}
 
 \renewcommand\familydefault{\sfdefault} 

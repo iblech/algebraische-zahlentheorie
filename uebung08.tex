@@ -1,4 +1,4 @@
-\documentclass[entwurf]{uebblatt}
+\documentclass{uebblatt}
 \begin{document}
 
 \maketitle{8}
@@ -14,10 +14,48 @@ Diskriminante des Minimalpolynoms von~$\vartheta$.
 von~$\O_K$ zueinander teilerfremd sind. Zeige, dass~$p$ genau dann in~$K$
 verzweigt ist, wenn~$p \mid d_\vartheta$.
 \item Zeige: Nur endlich viele Primzahlen sind in~$K$ verzweigt. Kannst du die
-Kandidaten für verzweigte Primzahlen sogar explizit angeben?
+Kandidaten für verzweigte Primzahlen sogar explizit angeben? Was ist die
+Konsequenz für die Visualisierung von Ganzheitsringen im Stile von Mumfords
+Schatzkarte?
 \item Interpretiere Aufgabe 2 von Blatt 4 in neuem Licht.
 \end{enumerate}
 \end{aufgabe}
+
+\begin{aufgabe}{Trägheit bei nichtzyklischer Galoisgruppe}
+Sei~$L|K$ eine Galoiserweiterung von Zahlkörpern. Sei~$\Gal(L|K)$ nicht zyklisch.
+\begin{enumerate}
+\item Zeige, dass kein Primideal von~$\O_K$ in~$L$ träge ist.
+
+{\tiny\emph{Tipp.} Verwende ohne Beweis, dass für Primideale~$\PPP$ über~$\ppp$
+mit Verzweigungsindex~1 gilt, dass~$G_\PPP \cong
+\Gal(\O_L/\PPP|\O_K/\ppp)$.\par}
+\item Folgere, dass nur endlich viele Primideale von~$\O_K$ in~$L$ unzerlegt sind.
+
+{\tiny\emph{Hinweis.} Ein Scholium von Aufgabe~1c) ist, dass nur endlich viele
+Primideale von~$\O_K$ in~$L$ verzweigt sind.\par}
+\end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe}{Vorfreude aufs quadratische Reziprozitätsgesetz, Gauß' aureum theorema}
+\begin{enumerate}
+\item Ist~$10$ modulo~$p \defeq 65537$ ein quadratischer Rest?
+
+{\tiny\emph{Hinweis.} Verwende ohne Beweis, dass $\leg{10}{p} = \leg{2}{p}
+\leg{5}{p}$ (das ist nicht krass) und~$\leg{5}{p} = \leg{p}{5}$ (das ist krass).\par}
+
+\item Bestimme die Periodenlänge der Dezimalbruchentwicklung von~$1/65537$.
+
+%{\tiny\emph{Hinweis.} Die Periodenlänge ist die Ordnung von~$10$ in der
+%multiplikativen Gruppe~$(\ZZ/(65537))^\times$ (wieso?). Als solche teilt
+%sie~$2^{16}$ (wieso?). Sie ist genau dann ein echter Teiler von~$2^{16}$,
+%wenn~$10$ modulo~$65537$ ein quadratischer Rest ist (wieso?).\par}
+\end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe*}{Lücken zwischen Primzahlen}
+Zeige: Zu jeder Lauflänge~$n \geq 1$ gibt es eine Folge von~$n$
+aufeinanderfolgenden natürlichen Zahlen, welche alle keine Primzahlen sind.
+\end{aufgabe*}
 
 \begin{aufgabe*}{Verzweigte Überlagerungen in der komplexen Geometrie}
 \begin{enumerate}
@@ -26,11 +64,6 @@ komplexen Geometrie und vergleiche die dortige Situation mit der fundamentalen
 Gleichung.
 \item Frage Sven, was er dir zu diesem Thema auf jeden Fall mitgeben möchte.
 \end{enumerate}
-\end{aufgabe*}
-
-\begin{aufgabe*}{Lücken zwischen Primzahlen}
-Zeige: Zu jeder Lauflänge~$n \geq 1$ gibt es eine Folge von~$n$
-aufeinanderfolgenden natürlichen Zahlen, welche alle keine Primzahlen sind.
 \end{aufgabe*}
 
 \end{document}
