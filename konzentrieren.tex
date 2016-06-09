@@ -1,0 +1,127 @@
+\documentclass[8pt]{uebblatt}
+\geometry{tmargin=2cm,bmargin=3cm,lmargin=3.1cm,rmargin=3.1cm}
+
+\usepackage{framed}
+
+\definecolor{haskell}{RGB}{150,0,255}
+
+\newcommand{\hilight}[2]{\begin{center}%
+  \setlength{\fboxrule}{2pt}%
+  \setlength{\fboxsep}{5pt}%
+  \textcolor{haskell}{\fbox{\textcolor{black}{\parbox{#1}{#2}}}}\end{center}}
+
+\newcommand{\ov}[1]{\overline{#1}}
+
+\let\raggedsection\centering
+
+\begin{document}
+
+\section*{Nachtrag zur Vorlesung über Verzweigung im Galoisfall}
+
+Diese Notiz soll einen ausführlichen Beweis der folgenden Behauptung geben:
+
+\hilight{0.8\textwidth}{
+  Sei~$L|K$ eine Galoiserweiterung von Zahlkörpern.
+  Sei~$\PPP \subseteq \O_L$ ein Primideal über~$\ppp \defeq \PPP \cap \O_K$
+  mit~$\PPP \neq (0)$.
+  Dann ist die Erweiterung~$\kappa(\PPP) | \kappa(\ppp)$ galoissch und der
+  kanonische Gruppenhomomorphismus
+  \[ \begin{array}{@{}rcl@{}}
+    G_\ppp &\longrightarrow& \Gal(\kappa(\PPP)|\kappa(\ppp)) \\
+    \sigma &\longmapsto& \ov\sigma
+  \end{array} \] ist surjektiv.
+}
+
+Dabei ist~$\kappa(\PPP) = \O_L/\PPP$, $\kappa(\ppp) = \O_K/\ppp$ und
+$G_\PPP = \{ \sigma \in \Gal(L|K) \,|\, \sigma[\PPP] = \PPP \}$; und~$\ov\sigma$
+schickt~$[x]$ auf~$[\sigma(x)]$.
+
+
+\subsubsection*{Reduktionsschritt}
+
+Zunächst beobachtet man, dass man ohne Einschränkung der Allgemeinheit
+voraussetzen kann, dass die Zerlegungsgruppe~$G_\PPP$ schon gleich der gesamten
+Galoisgruppe~$\Gal(L|K)$ ist. Denn das ist im Fall, dass man nicht die
+Erweiterung~$L|K$, sondern die Erweiterung~$L|Z_\PPP$ betrachtet, der Fall
+(Teilaussage~(0) des vorhergehenden Satzes); und beim Übergang von~$L|K$
+zu~$L|Z_\PPP$ ändert sich die Behauptung nicht, denn~$G_{\PPP|\ppp} =
+G_{\PPP|\qqq}$ und~$\Gal(\kappa(\PPP)|\kappa(\ppp)) =
+\Gal(\kappa(\PPP)|\kappa(\qqq))$. (Die letzte Gleichheit folgt
+aus~$f(\qqq|\ppp) = 1$, denn somit gilt~$\kappa(\ppp) = \kappa(\qqq)$.)
+
+Die so geschenkte Zusatzvoraussetzung~$G_\PPP = \Gal(L|K)$ wird erst im letzten
+Teilschritt des Beweises eingehen.
+
+
+\subsubsection*{Nachweis der Normalität}
+
+Sei~$\ov{g} \in \kappa(\ppp)[X]$ ein normiertes irreduzibles Polynom, das
+in~$\kappa(\PPP)$ eine Nullstelle~$\ov{\theta}$ besitzt. Es gibt dann
+ein~$\theta \in \O_L$ mit~$\ov\theta = [\theta] \in \kappa(\PPP)$. Wir möchten
+zeigen, dass~$\ov g$ über~$\kappa(\PPP)$ in Linearfaktoren zerfällt.
+
+Sei~$f \in K[X]$ das Minimalpolynom von~$\theta$ über~$K$. Da~$\theta$ ganz
+ist, sind auch alle Koeffizienten von~$f$ ganz, also liegt~$f$ schon
+in~$\O_K[X]$. Wir schreiben~"`$\ov f$"' für dasjenige Polynom
+in~$\kappa(\ppp)[X]$, das aus~$f$ entsteht, indem man alle Koeffizienten
+längs~$\O_K \to \kappa(\ppp)$ abbildet.
+
+Nun gilt~$\ov f(\ov\theta) = [f(\theta)] = [0] = 0 \in \kappa(\PPP)$, also
+ist~$\ov f$ ein Vielfaches des Minimalpolynoms von~$\ov\theta$. Somit~$\ov g
+\mid \ov f$ über~$\kappa(\ppp)$.
+
+Da~$L|K$ normal ist und~$f$ in~$L$ eine Nullstelle besitzt (nämlich~$\theta$),
+zerfällt~$f$ über~$L$ schon in Linearfaktoren. Die einzelnen Nullstellen sind
+wie~$\theta$ jeweils ganz, also zerfällt~$L$ sogar schon über~$\O_L$ in
+Linearfaktoren.
+
+Somit zerfällt auch~$\ov f$ über~$\kappa(\PPP)$ in Linearfaktoren. Und~$\ov g$
+als Teiler von~$\ov f$ damit ebenfalls.
+
+
+\subsubsection*{Nachweis der Surjektivität}
+
+Dieser Teil des Beweises geht an vielen Stellen genau wie der vorherige
+Teilbeweis vor, jedoch ist die Zielsetzung eine andere. Sei~$\tau \in
+\Gal(\kappa(\PPP)|\kappa(\ppp))$ gegeben; wir suchen ein Urbild
+in~$G_\PPP$.
+
+Da die Voraussetzungen des Satzes über das primitive Element erfüllt sind, gibt
+es ein~$\ov\theta \in \kappa(\PPP)$ mit~$\kappa(\PPP) = \kappa(\ppp)(\ov\theta)$.
+Es gibt dann ein~$\theta \in \O_L$ mit~$\ov\theta = [\theta]$.
+
+Sei~$\ov g \in \kappa(\ppp)[X]$ das Minimalpolynom von~$[\theta]$
+über~$\kappa(\ppp)$ und seien~$f$ und~$\ov f$ wie im vorherigen Abschnitt
+definiert, sei also~$f \in \O_K[X]$ das Minimalpolynom von~$\theta$ über~$K$
+und~$\ov f$ seine Reduktion modulo~$\ppp$.
+
+Der Automorphismus~$\tau$ ist durch die Angabe seines Bilds~$\ov\theta' \defeq
+\tau(\ov\theta)$ schon eindeutig festgelegt. Da wir einen Lift von~$\tau$
+auf~$L$ finden möchten, sollten wir dieses Bild genauer studieren. Zumindest
+ist klar, dass es eine der Nullstellen von~$\ov g$ ist. (Wie immer:~$\ov
+g(\ov\theta') = \ov g(\tau(\ov\theta)) = \tau(\ov g(\ov\theta)) = \tau(0) =
+0$, da~$\tau$ die Koeffizienten von~$\ov g$ invariant lässt, da sie
+in~$\kappa(\ppp)$ liegen.)
+
+Wie oben zerfällt~$f$ über~$\O_L$ in Linearfaktoren:~$f = \prod_i (X -
+\theta_i)$ mit Nullstellen~$\theta_i \in \O_L$. Somit zerfällt auch~$\ov f$
+über~$\kappa(\PPP)$ in Linearfaktoren, nämlich in die~$\prod_i (X -
+[\theta_i])$. Da~$\ov g$ ein Teiler von~$\ov f$ ist, ist~$\ov\theta'$ eine der
+Nullstellen von~$\ov f$. Also gibt es einen Index~$i$ mit~$\ov\theta' =
+[\theta_i]$.
+
+Wir können nun einen Automorphismus~$\sigma : L \to L$ über~$K$ durch die
+Forderung~$\sigma(\theta) = \theta_i$ konstruieren. Das machen wir, indem wir
+zunächst eine Körpereinbettung~$K(\theta) \to L$ durch~$\theta \mapsto
+\theta_i$ definieren (dazu müssen wir bekanntlich nur beachten, dass das
+Bildelement~$\theta_i$ Nullstelle des Minimalpolynoms des Erzeugers~$\theta$
+ist) und diese dann beliebig zu einem Automorphismus~$L \to L$ fortsetzen.
+
+\emph{Wegen der Zusatzvoraussetzung ist~$\sigma$ nicht nur ein Element
+von~$\Gal(L|K)$, sondern sogar von~$G_\PPP$.} Dieses Element ist das gesuchte
+Urbild, denn~$\ov\sigma$ und~$\tau$ stimmen auf dem Erzeuger~$\ov\theta$
+überein: $\ov\sigma(\ov\theta) = \ov\sigma([\theta]) = [\sigma(\theta)] =
+[\theta_i] = \ov\theta' = \tau(\ov\theta)$, und stimmen somit schon auf
+ganz~$\kappa(\PPP)$ überein.
+
+\end{document}

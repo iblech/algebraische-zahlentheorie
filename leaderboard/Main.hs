@@ -116,6 +116,10 @@ $doctype 5
       <br>
       <a href="magie.pdf">Von Minkowski zur Endlichkeit der Idealklassengruppe
       <br>
+      <a href="konzentrieren.pdf">Nachtrag zur Vorlesung über Verzweigung im Galoisfall
+      <br>
+      <a href="buchstaben.pdf">Schwierige Buchstaben
+      <br>
       $forall n <- shs
         <a href="uebung#{format n}.pdf">Blatt #{show n}
         <br>
