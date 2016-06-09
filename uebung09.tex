@@ -3,6 +3,43 @@
 
 \maketitle{9}
 
+\begin{aufgabe}{Beispiele für interessantes Verzweigungsverhalten}
+Finde Beispiele für Galoiserweiterungen~$L|K$ von Zahlkörpern und
+Primideale~$\ppp \subseteq \O_K$ mit~$\ppp \neq (0)$, für die
+\begin{enumerate}
+\item in der Primidealzerlegung von~$\ppp\O_L$ mindestens zwei Ideale vorkommen
+("`$r \geq 2$"'),
+\item die Primfaktoren mindestens Verzweigungsindex zwei haben ("`$e \geq 2$"'),
+\item der gemeinsame Trägheitsgrad der Primfaktoren mindestens zwei ist ("`$f \geq 2$"').
+\end{enumerate}
+{\tiny\emph{Präzisierung.} Finde drei einzelne Beispiele oder Beispiele, die
+mehrere der Wünsche erfüllen. Ganz wie du willst.\par}
+\end{aufgabe}
+
+\begin{aufgabe}{Faktorisierung in Zerlegungskörper und Trägheitskörper}
+\marginpar{\ \\\ \\{\qquad}$\xymatrix{
+  L \ar@{-}[d]^e \\
+  T_\PPP \ar@{-}[d]^f \\
+  Z_\PPP \ar@{-}[d]^r \\
+  K
+}$}
+Sei~$L|K$ eine Galoiserweiterung von Zahlkörpern. Sei~$\PPP \subseteq \O_L$ ein
+Primideal mit~$\PPP \neq (0)$. Sei~$e \defeq e(\PPP|\ppp)$ und~$f \defeq f(\PPP|\ppp)$.
+Zeige, dass wir den nebenstehenden Körperturm haben.
+\begin{enumerate}
+\item Wieso liegt~$Z_\PPP$ in~$T_\PPP$?
+\item Wieso ist~$[L : Z_\PPP] = ef$?
+\item Wieso ist~$T_\PPP$ über~$Z_\PPP$ normal und wieso ist~$\Gal(T_\PPP|Z_\PPP) \cong \Gal(\kappa(\PPP)|\kappa(\ppp))$?
+\item Wieso ist~$[L : T_\PPP] = e$ und wieso ist~$[T_\PPP : Z_\PPP] = f$?
+\item[$\heartsuit$ e)] Sei~$\rrr \defeq \PPP \cap \O_{T_\PPP}$.
+Sei~$\qqq \defeq \PPP \cap \O_{Z_\PPP}$. Zeige~$\kappa(\rrr) = \kappa(\PPP)$ und folgere:
+\[ e(\PPP|\rrr) = e(\PPP|\ppp), \quad
+  f(\PPP|\rrr) = 1, \quad
+  e(\PPP|\qqq) = 1, \quad
+  f(\PPP|\qqq) = f. \]
+\end{enumerate}
+\end{aufgabe}
+
 \begin{aufgabe}{Ein Geheimnis der Zahl 5}
 \begin{enumerate}
 \item Sei~$x \in \ZZ$. Sei~$p$ eine Primzahl. Zeige: $\leg{x}{p} \equiv
