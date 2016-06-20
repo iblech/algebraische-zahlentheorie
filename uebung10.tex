@@ -5,22 +5,48 @@
 
 \begin{aufgabe}{Das inverse galoissche Problem im abelschen Fall}
 \begin{enumerate}
-\item Sei~$n$ eine positive Zahl. Finde einen Zahlkörper~$K$
+\item Sei~$n \geq 1$. Finde eine galoissche Erweiterung~$K$ von~$\QQ$
 mit~$\Gal(K|\QQ) \cong \ZZ/(n)$.
 
 {\tiny\emph{Hinweis.} Finde nach Dirichlets Satz eine Primzahl~$p$ mit~$p
 \equiv 1$ modulo~$n$ und konstruiere~$K$ als geeigneten Fixkörper
 von~$\QQ(\zeta_p)$ über~$\QQ$.\par}
 
-\item Sei~$A$ eine endliche abelsche Gruppe. Finde einen Zahlkörper~$K$
-mit~$\Gal(K|\QQ) \cong A$.
+\item Sei~$A$ eine endliche abelsche Gruppe. Finde eine galoissche Erweiterung~$K$
+von~$\QQ$ mit~$\Gal(K|\QQ) \cong A$.
 
 {\tiny\emph{Hinweis.} Wir können~$A \cong \ZZ/(n_1) \times \cdots \times
 \ZZ/(n_r)$ schreiben und nach Dirichlets Satz \emph{verschiedene}
-Primzahlen~$p_i$ mit~$p_i \equiv 1$ modulo~$n_i$ finden. Wir können dann den
-gesuchten Zahlkörper~$K$ als den Fixkörper
-des Körpers~$\QQ(\zeta_{p_1}\cdots\zeta_{p_r})$ bezüglich einer geeigneten Untergruppe
-seiner Galoisgruppe finden.\par}
+Primzahlen~$p_i$ mit~$p_i \equiv 1$ modulo~$n_i$ finden. Wir können dann die
+gesuchte Erweiterung~$K$ als den Fixkörper
+der Erweiterung~$\QQ(\zeta_{p_1}\cdots\zeta_{p_r})|\QQ$ bezüglich einer geeigneten Untergruppe
+seiner Galoisgruppe finden. Diese ist unkanonisch isomorph zu~$\ZZ/(p_1-1)
+\times \cdots \times \ZZ/(p_r-1)$.\par}
+
+\item[{\includegraphics[height=8pt]{images/trollface} c)}]
+Löse Teilaufgabe~b) für nichtkommutative endliche Gruppen.
+\end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe}{Für Matthias S.}
+Seien~$p$ und~$q$ Primzahlen mit~$p \neq q$. Seien~$\zeta_p$ und~$\zeta_q$
+entsprechende primitive Einheitswurzeln.
+\begin{enumerate}
+\item[$\heartsuit$ a)] Erinnere dich, wie man für~$n \geq 1$ zeigt,
+dass~$\Gal(\QQ(\zeta_n)|\QQ) \cong (\ZZ/(n))^\times$.
+\item Zeige: $\QQ(\zeta_p, \zeta_q) = \QQ(\zeta_{pq})$.
+
+{\tiny\emph{Hinweis.} Dein Beweis zeigt allgemeiner, dass~$\QQ(\zeta_n,
+\zeta_m) = \QQ(\zeta_{\operatorname{kgV}(n,m)})$.\par}
+\item Zeige: $\QQ(\zeta_p) \cap \QQ(\zeta_q) = \QQ$.
+
+{\tiny\emph{Hinweis.} Auch diese Behauptung gilt allgemeiner (mit ggT statt
+kgV), ist dann aber etwas komplizierter zu beweisen. Es gibt mehrere Beweise
+der spezialisierten Behauptung. Interessant ist zum Beispiel folgender:
+Erinnere dich, dass sich~$p$ in~$\QQ(\zeta_p)$ mit~$r = f = 1$ zerlegt. Zeige,
+dass sich~$p$ in~$\QQ(\zeta_q)$ mit~$e = 1$ zerlegt. Folgere, dass sich~$p$
+in~$\QQ(\zeta_p) \cap \QQ(\zeta_q)$ mit~$r = e = f = 1$ zerlegt. Wieso genügt
+das?\par}
 \end{enumerate}
 \end{aufgabe}
 
