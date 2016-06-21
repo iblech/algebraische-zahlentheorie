@@ -1,4 +1,4 @@
-\documentclass[entwurf]{uebblatt}
+\documentclass{uebblatt}
 \begin{document}
 
 \maketitle{10}
@@ -34,6 +34,8 @@ entsprechende primitive Einheitswurzeln.
 \begin{enumerate}
 \item[$\heartsuit$ a)] Erinnere dich, wie man für~$n \geq 1$ zeigt,
 dass~$\Gal(\QQ(\zeta_n)|\QQ) \cong (\ZZ/(n))^\times$.
+\addtocounter{enumi}{1}
+
 \item Zeige: $\QQ(\zeta_p, \zeta_q) = \QQ(\zeta_{pq})$.
 
 {\tiny\emph{Hinweis.} Dein Beweis zeigt allgemeiner, dass~$\QQ(\zeta_n,
@@ -47,6 +49,35 @@ Erinnere dich, dass sich~$p$ in~$\QQ(\zeta_p)$ mit~$r = f = 1$ zerlegt. Zeige,
 dass sich~$p$ in~$\QQ(\zeta_q)$ mit~$e = 1$ zerlegt. Folgere, dass sich~$p$
 in~$\QQ(\zeta_p) \cap \QQ(\zeta_q)$ mit~$r = e = f = 1$ zerlegt. Wieso genügt
 das?\par}
+\end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe}{Ein Kriterium für die Unmöglichkeit einer Potenzbasis}
+Sei~$K$ ein Zahlkörper vom Grad~$n$. Existiere eine Primzahl~$p < n$, welche
+in~$K$ unverzweigt ist. Zeige, dass kein~$\alpha \in K$ mit~$\O_K =
+\ZZ[\alpha]$ existiert.
+\end{aufgabe}
+
+\begin{aufgabe}{Endlich etwas Konzeptionelles zum Eisenstein-Kriterium}
+Ein normiertes Polynom~$f(X) = X^n + a_{n-1}X^{n-1} + \cdots + a_1X + a_0 \in \ZZ[X]$
+heißt genau dann \emph{Eisensteinsch} bei einer Primzahl~$p$, wenn alle~$a_i$
+durch~$p$ teilbar, der konstante Koeffizient~$a_0$ aber nicht durch~$p^2$ teilbar ist.
+Man lernt, dass solche Polynome stets irreduzibel sind.
+\begin{enumerate}
+\item Sei~$\vartheta$ eine Nullstelle eines solchen Polynoms. Zeige, dass~$p$
+in~$\QQ(\vartheta)$ rein verzweigt ist.
+
+{\tiny\emph{Tipp.} Sei~$\ppp$ einer der Primidealfaktoren von~$(p) \subseteq
+\O_K$. Sei~$e$ sein Verzweigungsindex; es gilt also~$(p) \subseteq \ppp^e$ und
+wir hoffen,~$e = n$ nachweisen zu können. Zeige, dass~$a_i \vartheta^i$ für~$i
+= 1,\ldots,n-1$ in~$\ppp^{e+1}$ liegt. Zeige weiter, dass~$a_0$ (zwar
+in~$\ppp^e$, aber) nicht in~$\ppp^{e+1}$ liegt. Folgere, dass~$\vartheta^n$
+nicht in~$\ppp^{e+1}$ liegt. Beobachte, dass~$\vartheta^n$ aber in~$\ppp^n$
+liegt. Sei fertig.\par}
+
+\item Welche Primzahlen muss man also nur untersuchen, wenn man das
+Eisenstein-Kriteriums anwenden möchte? Ist deine Antwort
+sogar robust gegen Verschiebungen des Polynoms, also dem Übergang zu~$f(X-a)$?
 \end{enumerate}
 \end{aufgabe}
 
