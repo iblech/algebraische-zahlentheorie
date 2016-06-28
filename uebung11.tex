@@ -1,0 +1,74 @@
+\documentclass{uebblatt}
+\begin{document}
+
+\maketitle{11}
+
+\begin{aufgabe}{Endlichkeit der Untergruppe der Einheitswurzeln}
+\begin{enumerate}
+\item Sei~$K$ ein Zahlkörper. Zeige, dass~$\mu(K) = \{ \zeta \in K \,|\,
+\text{$\zeta^k = 1$ für ein~$k \in \NN$} \}$ endlich ist.
+
+{\tiny\emph{Erinnerung.} Es gilt~$\varphi(ab) = \varphi(a) \varphi(b)$ für
+teilerfremde Zahlen~$a$ und~$b$ und~$\varphi(p^r) = p^r - p^{r-1}$.\par}
+%{\tiny\emph{Tipp.} Weise nach, dass es zu jeder Zahl~$N \geq 1$ nur endlich
+%viele Zahlen~$k$ mit~$\varphi(k) = N$ gibt.\par}
+
+\item Sei~$K$ ein Zahlkörper, der über eine Einbettung nach~$\RR$ verfügt.
+Zeige: $\mu(K) = \{ \pm1 \}$.
+
+\item Welche Zahlkörper enthalten nur endlich viele Einheiten? Was ist eine
+obere Schranke dafür, wie viele Einheiten diese Zahlkörper höchstens enthalten?
+\end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe}{Die Schlacht an der Bucht der Drachen}
+\begin{enumerate}
+\item Sei~$K \defeq \QQ[\sqrt{13}]$. Bestimme eine fundamentale Einheit
+von~$\O_K$, also ein Einheit~$\varepsilon$, sodass jede Einheit von~$\O_K$ von der
+Form~$\pm \varepsilon^m$ für ein~$m \in \ZZ$ ist.
+
+{\tiny\emph{Tipp.} Du weißt, wie~$\O_K$ aussieht. Zeichne das
+Gitter~$(\ell \circ j)[\O_K^\times]$ in~$H = \{ (x,y) \in \RR^2 \,|\, x + y = 0
+\} \subseteq \RR^2$ und
+finde einen Punkt, der dem Ursprung am nächsten ist. Das ist eine fundamentale
+Einheit.\par}
+
+\item Als sich Daenerys' Armee der Unbefleckten im üblichen militärischen Stil
+formiert hatte, sahen ihre Gegner 13 gleich große quadratische Einheiten.
+Zusammen mit Daenerys selbst hätten sie aber auch ein einzelnes großes Quadrat
+bilden können. Wie viele Krieger umfasste die Armee und wie alt ist der
+Busfahrer?
+
+{\tiny\emph{Tipp.} Für den ersten Teil~Aufgabe a).\par}
+\end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe}{Ein allgemeines Beispiel zur Einheitenbestimmung}
+\begin{enumerate}
+\item Sei~$K$ ein Zahlkörper mit~$r$ reellen und~$s$ Paaren komplexer
+Einbettungen. Zeige, dass das Vorzeichen der Diskriminante von~$K$
+gleich~$(-1)^s$ ist.
+\item Sei~$K$ ein Zahlkörper vom Grad~3 mit negativer Diskriminante. Zeige,
+dass es eine fundamentale Einheit~$\varepsilon \in \O_K$ gibt und dass~$K =
+\QQ(\varepsilon)$ ist.
+
+{\tiny\emph{Tipp.} Weise zunächst nach, dass~$K$ über genau eine reelle und
+genau ein Pärchen komplexer Einbettungen verfügt. Damit ausgestattet liefert
+dir der Dirichletsche Einheitensatz eine fundamentale Einheit~$\varepsilon$.
+Weise nun nach, dass~$[\QQ(\varepsilon) : \QQ] = [K : \QQ] = 3$. Damit folgt~$K
+= \QQ(\varepsilon)$.\par}
+\end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe}{Einheiten von rein reellen Zahlkörpern}
+Sei~$K$ ein rein reeller Zahlkörper (d.\,h. dass das Bild einer jeden
+Körpereinbettung~$K \to \CC$ schon in~$\RR$ liegt). Sei~$X$ eine echte
+nichtleere Teilmenge von~$\Hom(K, \RR)$. Zeige, dass es eine
+Einheit~$\varepsilon$ mit~$0 < \sigma(\varepsilon) < 1$ für alle~$\sigma \in X$
+und~$\sigma(\varepsilon) > 1$ für alle~$\sigma \not\in X$ gibt.
+
+{\tiny\emph{Hinweis.} Verwende den Gitterpunktsatz von Minkowski in der
+Spur-Null-Hyperebene.\par}
+\end{aufgabe}
+
+\end{document}
