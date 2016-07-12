@@ -1,0 +1,84 @@
+\documentclass{uebblatt}
+\begin{document}
+
+\maketitle{13}
+
+\begin{aufgabe}{Triviales zu Bewertungen}
+Sei~$|\cdot|$ eine Bewertung auf einem Körper~$K$.
+\begin{enumerate}
+\item Zeige, dass~$|\cdot|$ genau dann die verschärfte Dreiecksungleichung~$|x
++ y| \leq \max\{|x|,|y|\}$ erfüllt, wenn für alle~$x \in K$ aus~$|x| \leq 1$
+folgt, dass~$|x + 1| \leq 1$.
+\end{enumerate}
+Gelte von nun an die verschärfte Dreiecksungleichung.
+\begin{enumerate}
+\addtocounter{enumi}{1}
+\item Seien~$x,y \in K$ mit~$|x| \neq |y|$. Zeige, dass~$|x + y| = \max\{ |x|, |y| \}$.
+\item Zeige, dass alle Dreiecke in~$K$ gleichschenklig sind.
+\end{enumerate}
+{\tiny\emph{Tipp.} Dividiere durch~$|x|$ oder~$|y|$. Schreibe sowas wie~"`$|x +
+(y - x)|$"'.\par}
+\end{aufgabe}
+
+\begin{aufgabe}{Triviale Bewertungen}
+Sei~$L|K$ eine algebraische Körpererweiterung. Sei~$w$ eine
+Exponentialbewertung auf~$L$, welche auf~$K$ trivial ist (d.\,h.~$w(x) = 0$ für
+alle~$x \in K^\times$). Zeige, dass~$w$ auf~$L$ trivial ist.
+\end{aufgabe}
+
+\begin{aufgabe}{Charakterisierung nichtarchimedischer Bewertungen}
+Sei~$|\cdot|$ eine nichtarchimedische Bewertung auf einem Zahlkörper~$K$.
+\begin{enumerate}
+\item Sei zunächst~$K = \QQ$. Zeige, dass es eine Primzahl~$p$ mit~$|\cdot| =
+|\cdot|_p$ gibt.
+\item Zeige, dass es ein Primideal~$\ppp \subseteq \O_K$ mit~$\ppp \neq (0)$
+und~$|\cdot| = |\cdot|_\ppp$ gibt.
+\end{enumerate}
+{\tiny\emph{Hinweis.} Die Bewertung erfüllt die verschärfte
+Dreiecksungleichung. Zeige zunächst, dass~$|x| \leq 1$ für alle~$x \in \ZZ$.
+Zeige dann, dass~$\{ x \in \ZZ \,|\, |x| < 1 \}$ ein nichttriviales Primideal
+von~$\ZZ$ ist. Es ist also von der Form~$(p)$ für eine Primzahl~$p$. Für diese
+Primzahl~$p$ kannst die Behauptung nachweisen. Der Beweis im allgemeinen Fall
+verläuft analog, mit~$\O_K$ statt~$\ZZ$.\par}
+\end{aufgabe}
+
+\begin{aufgabe}{Bewertung irreduzibler Polynome}
+Sei~$K$ ein vollständig diskret bewerteter Körper. Sei~$\O \defeq \{ x \in K
+\,|\, |x| \leq 1 \}$ sein Bewertungsring. Sei~$f(X) = a_n X^n + \cdots
++ a_1 X + a_0 \in K[X]$ ein irreduzibles Polynom.
+\begin{enumerate}
+\item Zeige, dass~$|f(X)| = \max\{|a_0|,|a_n|\}$.
+
+{\tiny\emph{Hinweis.} Nach Definition ist~$|f(X)| =
+\max\{|a_0|,\ldots,|a_n|\}$. Verwende Hensels Lemma in seiner allgemeinen
+Formulierung.\par}
+\item Folgere: Ist~$f(X)$ normiert und~$a_0 \in \O$, so gilt schon~$f(X) \in
+\O[X]$.
+\end{enumerate}
+\end{aufgabe}
+
+\begin{aufgabe}{Fortsetzung von Bewertungen}
+Sei~$K$ ein vollständig diskret bewerteter Körper~$K$. Sei~$L|K$ eine
+Erweiterung vom Grad~$n$. Zeige, dass die Setzung~$|x| \defeq
+\sqrt[n]{|N_{L|K}(x)|}$ für~$x \in L$ eine Bewertung auf~$L$ definiert, welche
+die gegebene Bewertung auf~$K$ fortsetzt.
+
+{\tiny\emph{Tipp.} Zeige zunächst, dass der ganze Abschluss des
+Bewertungsrings~$\O_K$ von~$K$ in~$L$ gleich~$\{ x \in L \,|\, N_{L|K}(x) \in
+\O_K \}$ ist. Verwende dazu die bekannte Formel, die Norm und den konstanten
+Koeffizienten des Minimalpolynoms miteinander in Beziehung setzt. Die
+Inklusion~"`$\subseteq$"' wurde schon vor langer Zeit behandelt. Nutze für die
+andere Inklusion die Folgerung aus der vorherigen Teilaufgabe.\par}
+\end{aufgabe}
+
+\end{document}
+Zeige, dass im Fall eines vollständig diskret bewerteten Körpers K die Formel
+|x|=\sqrt[n]{ |
+N_{L|K}(x) |} für eine endliche Erweiterung L|K eine Bewertung definiert, die
+|.| auf K fortsetzt.
+(Hinweis: Zeige Folgendes: ist O der Bewertungsring von K und O_L dessen ganzer
+Abschluss in L, so
+gilt O_L=\{ x \in L \mid N_{L|K}(x) \in O \} — Aufgabe zuvor nutzen!).
+(noch ein Hinweis: zeige, dass äquivalent sind:
+1) |x+y|\le max(|x|,|y|) für alle x,y \neq 0
+2) |x| \le 1 \Leftrightarrow |x+1| \le 1).
