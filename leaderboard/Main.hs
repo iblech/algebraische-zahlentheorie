@@ -31,9 +31,13 @@ currentStreak = last . streaks
 streaks :: Algebraist -> [Int]
 streaks = (0:) . map (length . filter (== T)) . group . sheets
 
+unknownSheets :: Algebraist -> Int
+unknownSheets = length . filter (==U) . sheets
+
 strength :: Algebraist -> Algebraist -> Ordering
 strength = mconcat
-    [ flip (comparing longestStreak)
+    [ flip (comparing unknownSheets)
+    , flip (comparing longestStreak)
     , flip (comparing currentStreak)
     , comparing nick
     ]
@@ -56,6 +60,7 @@ renderAlgebraist p = [hamlet|
           <span class="rect unknown">☯
         $else
           <span class="rect failure">■
+    <td>#{unknownSheets p}
     <td>#{longestStreak p}
     <td>#{currentStreak p}
     <td>#{concat $ intersperse ", " $ awards p}
@@ -106,6 +111,7 @@ $doctype 5
       <tr>
         <th>ZahlentheoretikerIn
         <th>Abgaben
+        <th>unentschiedene Blätter
         <th>längste Strähne
         <th>aktuelle Strähne
         <th>besondere Auszeichnungen
